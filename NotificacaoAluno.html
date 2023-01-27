@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificação ADM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos/style7.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+            <img src="imagem/logo.png">
+            <div class="logo_name">Academic helth</div>
+        </div>
+        <i class="fa-solid fa-bars" id="btn"></i>
+    </div>
+
+    <ul class="nav_list">
+        <li>
+            <a href="MenuAluno.html">
+                <i class="fa-solid fa-house"></i>
+                <span class="link_nomes">Home</span>
+            </a>
+            <span class="tooltip">Home</span>
+        </li>
+
+        <li>
+            <a href="PerfilAlunos.html">
+                <i class="fa-solid fa-user"></i>
+                <span class="link_nomes">Meu perfil</span>
+            </a>
+            <span class="tooltip">Meu perfil</span>
+        </li>
+
+
+        <li>
+            <a href="Sintomas.html">
+                <i class="fa-regular fa-clipboard"></i>
+                <span class="link_nomes">Sintomas</span>
+            </a>
+            <span class="tooltip">Sintomas</span>
+        </li>
+
+
+        <li>
+            <a href="NotificacaoAluno.html">
+                <i class="fa-solid fa-bell"></i>
+                <span class="link_nomes">Notificação</span>
+            </a>
+            <span class="tooltip">Notificação</span>
+        </li>
+
+
+        <li>
+            <a href="MensagemAluno.html">
+                <i class="fa-solid fa-message"></i>
+                <span class="link_nomes">Mensagens</span>
+            </a>
+            <span class="tooltip">Mensagens</span>
+        </li>
+
+
+        <li>
+            <a href="StatusAluno.html">
+                <i class="fa-solid fa-circle-check"></i>
+                <span class="link_nomes">Status</span>
+            </a>
+            <span class="tooltip">Status</span>
+        </li>
+
+    </ul>
+</div>
+
+<div class="content-lidas">
+    <div class="input-group">
+        <div class="lidas-button">
+            <button>Lidas</button>
+        </div>
+
+        <div class="input-box-lidas">
+            <label for="notilidas">Notificações lidas</label>
+        </div>
+    
+    </div>
+</div>
+
+     
+<div class="content-naolidas">
+    <div class="input-group-naolidas">
+        <div class="naolidas-button">
+            <button>Não lidas</button>
+        </div>
+
+        <div class="input-box-naolidas">
+            <label for="notinaolidas">Notificações não lidas</label>
+        </div>
+    
+    </div>
+</div>
+
+<script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+
+    btn.onclick = function(){
+        sidebar.classList.toggle("active");
+    }
+</script>
+</body>
+
+</html>

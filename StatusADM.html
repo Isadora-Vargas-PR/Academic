@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos/style9.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+            <img src="imagem/logo.png">
+            <div class="logo_name">Academic helth</div>
+        </div>
+        <i class="fa-solid fa-bars" id="btn"></i>
+    </div>
+
+    <ul class="nav_list">
+        <li>
+            <a href="MenuADM.html">
+                <i class="fa-solid fa-house"></i>
+                <span class="link_nomes">Home</span>
+            </a>
+            <span class="tooltip">Home</span>
+        </li>
+
+        <li>
+            <a href="PerfilADM.html">
+                <i class="fa-solid fa-user"></i>
+                <span class="link_nomes">Meu perfil</span>
+            </a>
+            <span class="tooltip">Meu perfil</span>
+        </li>
+
+
+        <li>
+            <a href="CadastroADM.html">
+                <i class="fa-solid fa-user-plus"></i>
+                <span class="link_nomes">Cadastrar aluno</span>
+            </a>
+            <span class="tooltip">Cadastrar aluno</span>
+        </li>
+
+
+        <li>
+            <a href="NotificacaoADM.html">
+                <i class="fa-solid fa-bell"></i>
+                <span class="link_nomes">Notificação</span>
+            </a>
+            <span class="tooltip">Notificação</span>
+        </li>
+
+
+        <li>
+            <a href="MensagemADM.html">
+                <i class="fa-solid fa-message"></i>
+                <span class="link_nomes">Mensagens</span>
+            </a>
+            <span class="tooltip">Mensagens</span>
+        </li>
+
+
+        <li>
+            <a href="StatusADM.html">
+                <i class="fa-solid fa-circle-check"></i>
+                <span class="link_nomes">Status</span>
+            </a>
+            <span class="tooltip">Status</span>
+        </li>
+
+    </ul>
+</div>
+        <div class="content">
+            <div class="verificação-box">
+                <h1>Verifique o status dos discentes</h1>
+            </div>
+
+            <div class="status-box">
+                <p> Selecione o turno:</p>
+
+            <div class="manha-btn">
+                <button><a href="Status2ADM.html">Manhã</a></button>
+            </div>
+
+            <div class="tarde-btn">
+                <button><a href="Status3ADM.html">Tarde</a></button>
+            </div>
+
+        </div>
+
+                 <div class="avancar-button">
+                    <button>Avançar</button>
+                 </div>
+
+            </div>
+        </div>
+
+        <script>
+            let btn = document.querySelector("#btn");
+            let sidebar = document.querySelector(".sidebar");
+        
+            btn.onclick = function(){
+                sidebar.classList.toggle("active");
+            }
+        </script>
+        </body>
+        
+        </html>
