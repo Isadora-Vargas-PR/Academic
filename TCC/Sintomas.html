@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Aluno</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="estilos/style14.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo_content">
+      <div class="logo">
+        <img src="imagem/logo.png">
+        <div class="logo_name">Academic helth</div>
+      </div>
+      <i class="fa-solid fa-bars" id="btn"></i>
+    </div>
+
+    <ul class="nav_list">
+      <li>
+        <a href="MenuAluno.html">
+          <i class="fa-solid fa-house"></i>
+          <span class="link_nomes">Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+      </li>
+
+      <li>
+        <a href="PerfilAlunos.html">
+          <i class="fa-solid fa-user"></i>
+          <span class="link_nomes">Meu perfil</span>
+        </a>
+        <span class="tooltip">Meu perfil</span>
+      </li>
+
+
+      <li>
+        <a href="Sintomas.html">
+          <i class="fa-regular fa-clipboard"></i>
+          <span class="link_nomes">Sintomas</span>
+
+        </a>
+        <span class="tooltip">Sintomas</span>
+      </li>
+
+
+      <li>
+        <a href="NotificacaoAluno.html">
+          <i class="fa-solid fa-bell"></i>
+          <span class="link_nomes">Notificação</span>
+        </a>
+        <span class="tooltip">Notificação</span>
+      </li>
+
+
+      <li>
+        <a href="MensagemAluno.html">
+          <i class="fa-solid fa-message"></i>
+          <span class="link_nomes">Mensagens</span>
+        </a>
+        <span class="tooltip">Mensagens</span>
+      </li>
+
+
+      <li>
+        <a href="StatusAluno.html">
+          <i class="fa-solid fa-circle-check"></i>
+          <span class="link_nomes">Status</span>
+        </a>
+        <span class="tooltip">Status</span>
+      </li>
+
+    </ul>
+  </div>
+
+
+  <div class="content">
+
+    <form action="Sintomas.php" method="POST">
+
+      <button>Marque os sintomas evidentes: </button>
+
+   
+      <input type="date" name="Data_Registro" id="Data_Registro" required>
+  
+
+      <label class="switch">
+        <span class="switch-text">Você testou positivo para Covid-19?</span>
+        <div class="switch-wrapper">
+          <input type="checkbox" onclick=true name="Testou_Positivo" />
+          <span class="switch-button"></span>
+          <script>if (onclick === true) { console.log('To Dodoi') }</script>
+        </div>
+      </label>
+
+      <label class="switch">
+        <span class="switch-text">Apresentou febre nos últimos dias?</span>
+        <div class="switch-wrapper">
+          <input type="checkbox" name="Febre" />
+          <span class="switch-button"></span>
+        </div>
+      </label>
+
+
+      <label class="switch">
+        <span class="switch-text">Apresentou tosse nos últimos dias?</span>
+        <div class="switch-wrapper">
+          <input type="checkbox" name="Tosse" />
+          <span class="switch-button"></span>
+        </div>
+      </label>
+
+
+      <label class="switch">
+        <span class="switch-text">Apresentou alguma dificuldade para respirar?</span>
+        <div class="switch-wrapper">
+          <input type="checkbox" name="Dificuldade_Respirar" />
+          <span class="switch-button"></span>
+        </div>
+      </label>
+
+      <label class="switch">
+        <span class="switch-text">Teve contato próximo com caso suspeito de Covid-19?</span>
+        <div class="switch-wrapper">
+          <input type="checkbox" name="Contato_Suspeito" />
+          <span class="switch-button"></span>
+        </div>
+      </label>
+
+      <label class="switch">
+        <span class="switch-text">Teve contato próximo com caso confirmado de Covid-19?</span>
+        <div class="switch-wrapper">
+          <input type="checkbox" name="Contato_Confirmado" />
+          <span class="switch-button"></span>
+        </div>
+      </label>
+
+      <label class="switch">
+        <span class="switch-text">Qual sua idade?</span>
+        <input id="idade" type="number" name="Faixa_Etaria" required>
+      </label>
+
+
+      <label class="switch">
+        <span class="switch-text">Faz parte do grupo de risco?</span>
+        <div class="switch-wrapper">
+          <input type="checkbox" name="Grupo_Risco" />
+          <span class="switch-button"></span>
+        </div>
+      </label>
+
+
+      <i class="fa-regular fa-lightbulb"></i>
+      <h1>Grupo de risco:</h1>
+      <p>Diabéticos, hipestensos, insuficiência cardíaca,
+        doença respiratória ou crônica, e/ou possui problemas renais</p>
+
+      <label class="switch">
+        <span class="switch-text">Qual o nível de impacto você terá na sua vida escolar em questão da quarentena?</span>
+        <div class="switch-wrapper">
+          <textarea rows="5" name="Impacto_Escolar" required></textarea>
+          <input type="text" name="Impacto_Escolar" />
+        </div>
+      </label>
+
+      <br> <br>
+
+      <input class="inputSubmit" type="submit" name="submit" value="Enviar">
+
+
+    </form>
+  </div>
+
+
+  <script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+
+    btn.onclick = function () {
+      sidebar.classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>

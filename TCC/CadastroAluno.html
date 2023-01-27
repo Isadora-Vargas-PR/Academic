@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Aluno</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos/style5.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+            <img src="imagem/logo.png">
+            <div class="logo_name">Academic helth</div>
+        </div>
+        <i class="fa-solid fa-bars" id="btn"></i>
+    </div>
+
+    <ul class="nav_list">
+        <li>
+            <a href="MenuADM.html">
+                <i class="fa-solid fa-house"></i>
+                <span class="link_nomes">Home</span>
+            </a>
+            <span class="tooltip">Home</span>
+        </li>
+
+        <li>
+            <a href="PerfilADM.html">
+                <i class="fa-solid fa-user"></i>
+                <span class="link_nomes">Meu perfil</span>
+            </a>
+            <span class="tooltip">Meu perfil</span>
+        </li>
+
+
+        <li>
+            <a href="CadastroAluno.html">
+                <i class="fa-solid fa-user-plus"></i>
+                <span class="link_nomes">Cadastrar aluno</span>
+            </a>
+            <span class="tooltip">Cadastrar aluno</span>
+        </li>
+
+
+        <li>
+            <a href="NotificacaoADM.html">
+                <i class="fa-solid fa-bell"></i>
+                <span class="link_nomes">Notificação</span>
+            </a>
+            <span class="tooltip">Notificação</span>
+        </li>
+
+
+        <li>
+            <a href="MensagemADM.html">
+                <i class="fa-solid fa-message"></i>
+                <span class="link_nomes">Mensagens</span>
+            </a>
+            <span class="tooltip">Mensagens</span>
+        </li>
+
+
+        <li>
+            <a href="StatusADM.html">
+                <i class="fa-solid fa-circle-check"></i>
+                <span class="link_nomes">Status</span>
+            </a>
+            <span class="tooltip">Status</span>
+        </li>
+
+    </ul>
+</div>
+
+        <div class="content">
+            <div class="input-group">
+
+                <div class="buttonCadastro">
+                    <a href="CadastroAluno.html"><button>Cadastro</button></a>
+                </div>
+
+                <div class="buttonEditar">
+                    <a href="EditarAluno.html"><button>Editar</button></a>
+                </div>
+
+                <div class="input-box">
+                    <label for="nome">Nome:</label>
+                    <input id="Nome_Aluno" type="text" name="Nome_Aluno" placeholder="Nome do aluno" required>
+                </div>
+                
+                
+                <div class="input-box">
+                    <label for="instituicao">Instituição:</label>
+                    <input id="instituicaoADM" type="text" name="Instituicao_Aluno" placeholder="Instituição do aluno" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="matricula">Matrícula:</label>
+                    <input id="matricula" type="text" name="Matricula" placeholder="Digite a matrícula" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="Ano">Qual o ano do aluno?</label>
+                    <input id="anoAluno" type="number" name="Ano" placeholder="Informe o ano" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="Turno">Qual o turno do aluno?</label>
+                    <input id="turnoAluno" type="text" name="Turno" placeholder="Informe o turno" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">E-mail:</label>
+                    <input id="emailAluno" type="text" name="Email" placeholder="Informe o e-mail" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="senha">Senha:</label>
+                    <input id="senhaAluno" type="password" name="Senha" placeholder="Informe a senha" required>
+                </div>
+                
+            <div class="cadastro-button">
+                    <button><a href="#">Cadastrar Aluno</a></button>
+                </div>
+                </div>
+            </div>
+         </div>
+
+         <script>
+            let btn = document.querySelector("#btn");
+            let sidebar = document.querySelector(".sidebar");
+        
+            btn.onclick = function(){
+                sidebar.classList.toggle("active");
+            }
+        </script>
+        </body>
+        
+        </html>

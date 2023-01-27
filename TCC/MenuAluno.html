@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Aluno</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos/style12.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+            <img src="imagem/logo.png">
+            <div class="logo_name">Academic helth</div>
+        </div>
+        <i class="fa-solid fa-bars" id="btn"></i>
+    </div>
+
+    <ul class="nav_list">
+        <li>
+            <a href="MenuAluno.html">
+                <i class="fa-solid fa-house"></i>
+                <span class="link_nomes">Home</span>
+            </a>
+            <span class="tooltip">Home</span>
+        </li>
+
+        <li>
+            <a href="PerfilAlunos.html">
+                <i class="fa-solid fa-user"></i>
+                <span class="link_nomes">Meu perfil</span>
+            </a>
+            <span class="tooltip">Meu perfil</span>
+        </li>
+
+
+        <li>
+            <a href="Sintomas.html">
+                <i class="fa-regular fa-clipboard"></i>
+                <span class="link_nomes">Sintomas</span>
+            </a>
+            <span class="tooltip">Sintomas</span>
+        </li>
+
+
+        <li>
+            <a href="NotificacaoAluno.html">
+                <i class="fa-solid fa-bell"></i>
+                <span class="link_nomes">Notificação</span>
+            </a>
+            <span class="tooltip">Notificação</span>
+        </li>
+
+
+        <li>
+            <a href="MensagemAluno.html">
+                <i class="fa-solid fa-message"></i>
+                <span class="link_nomes">Mensagens</span>
+            </a>
+            <span class="tooltip">Mensagens</span>
+        </li>
+
+
+        <li>
+            <a href="StatusAluno.html">
+                <i class="fa-solid fa-circle-check"></i>
+                <span class="link_nomes">Status</span>
+            </a>
+            <span class="tooltip">Status</span>
+        </li>
+
+    </ul>
+</div>
+
+
+<div class="content">
+    <div class="home-titulo">
+        <h1>Olá Usuário,</h1>
+        <br>
+        <p>
+            Academic Health é uma aplicação para autodiagnóstico de Covid-19 entre os alunos do Câmpus.
+             Abaixo constam informações de como funciona a plataforma e algumas dicas para evitar a contaminação.
+        </p>
+    </div>
+
+    <div class="home-plataforma">
+        <h1>Como usar a plataforma?</h1>
+        <p>
+            No módulo Status, é possível verificar se você está apto ou não para assistir às aulas. <br>
+            <br> 
+            <br>
+            No módulo Sintomas você deverá registrar seus sintomas evidentes, se não estiver com <br>
+            sintomas registre como "Sem sintomas".<br> 
+            <br> 
+            <br>
+            Você pode entrar em contato diretamente com a cordenação de sua instituição, no módulo Mensagens.
+        </p>
+    </div>
+  
+    <div class="card1"> 
+        <div class="img">
+            <img src="imagem/mão.png">
+        </div>
+        <div class="container">
+            <p>
+                Lave suas mão corretamente e utilize álcool em gel.
+            </p>
+        </div>
+    </div>
+
+    <div class="card2"> 
+        <div class="img">
+            <img src="imagem/máscara.png">
+        </div>
+        <div class="container">
+            <p>
+                Em ambientes muito fechados utilize máscara.
+            </p>
+        </div>
+    </div>
+
+    <div class="card3"> 
+        <div class="img">
+            <img src="imagem/covid.png">
+        </div>
+        <div class="container">
+            <p>
+                Apresentou sintomas de Covid, faça o teste.
+            </p>
+        </div>
+    </div>
+ </div>
+</div>
+
+<script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+
+    btn.onclick = function(){
+        sidebar.classList.toggle("active");
+    }
+</script>
+</body>
+
+</html>
